@@ -1,0 +1,23 @@
+@charset "UTF-8";
+/* CSS Document */
+
+*
+{
+	background-color:#e0dcd0;
+}
+#envoltorio
+{
+	width:1024px;
+	height:auto;
+	margin:auto;
+}
+
+#header
+{
+	width:1024px;
+}
+
+#default
+{
+	margin:auto;
+}
