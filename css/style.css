@@ -30,6 +30,24 @@ p
 	font-family: 'walkwaybold';
 }
 
+header
+{
+	margin-bottom: 5em;
+    	margin-top: 4em;
+}
+
+footer
+{
+	opacity: 1; z-index: 3; position: inherit;	
+}
+
+footer p
+{
+	font-size: 1.2em;
+    	line-height: .7;	
+}
+
+
 div.construccion
 {
 	text-align: center;
@@ -77,6 +95,7 @@ div.logo a
 	color: white;
     	text-decoration: none;
     	position: inherit;	
+    	border: none;
 }
 
 div.logo a:hover
@@ -89,24 +108,6 @@ div.logo a p
 	font-size: 1.1em;
 }
 
-header
-{
-	margin-bottom: 5em;
-    	margin-top: 4em;
-}
-
-footer
-{
-	opacity: 1; z-index: 3; position: inherit;	
-}
-
-footer p
-{
-	font-size: 1.2em;
-    	line-height: .7;	
-}
-
-
 div.border
 {
 	text-align: center; 
@@ -117,29 +118,34 @@ div.border
 }
 
 @media only screen and (max-width: 1130px){
-	body {
-	margin-bottom: 0rem;
-	min-height: 240px;
+	body 
+	{
+		margin-bottom: 0rem;
+		min-height: 240px;
+		background-size: 130%;
 	}
 
-	div.border {
-	width: 35%;
-	margin: 0 32.5%;
+	div.border 
+	{
+		width: 35%;
+		margin: 0 32.5%;
 	}
 }
 
 
 @media only screen and (max-width: 900px){
-	body {
-	height: 100%;
-	background-size: auto;
+	body 
+	{
+		height: 100%;
+		background-size: auto;
 	}
 
-	div.border {
-	text-align: center;
-	border-bottom: solid 4px white;
-	padding-bottom: .5em;
-	margin: 0 14%;
-	width: inherit;
+	div.border 
+	{
+		text-align: center;
+		border-bottom: solid 4px white;
+		padding-bottom: .5em;
+		margin: 0 14%;
+		width: inherit;
 	}
 }
