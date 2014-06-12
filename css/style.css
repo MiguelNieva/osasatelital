@@ -1,16 +1,4 @@
 @font-face {
-    font-family: 'walkway';
-    src: url('../fonts/walkway/Walkway_SemiBold-webfont.eot');
-    src: url('../fonts/walkway/Walkway_SemiBold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/walkway/Walkway_SemiBold-webfont.woff') format('woff'),
-         url('../fonts/walkway/Walkway_SemiBold-webfont.ttf') format('truetype'),
-         url('../fonts/walkway/Walkway_SemiBold-webfont.svg#walkway_semiboldregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
     font-family: 'walkwaybold';
     src: url('../fonts/walkway-bold/Walkway_Bold-webfont.eot');
     src: url('../fonts/walkway-bold/Walkway_Bold-webfont.eot?#iefix') format('embedded-opentype'),
@@ -21,9 +9,6 @@
     font-style: normal;
 }
 
-
-
-	
 body
 {
 	background-image: url("../img/mapa.png");
@@ -45,12 +30,103 @@ p
 	font-family: 'walkwaybold';
 }
 
-.construccion
+div.construccion
 {
 	text-align: center;
 	border-bottom: solid 1px white;
 }
 
+div.construccion p
+{
+	font-size: 1.9em;
+    	margin-bottom: .2em;
+}
+
+div.portada
+{
+	position: relative;  width: 100%; 
+    	height: 100%; 
+    	text-align: center; 
+    	background-color: rgba(0,0,0,.4); 
+    	background-size: 100%; 
+    	position: fixed;
+    	z-index: 1;	
+}
+div.contenido
+{
+	opacity: 1;
+    	z-index: 3;
+    	position: inherit;
+}
+
+div.logo
+{
+	opacity: 1; 
+	z-index: 3; 
+	position: inherit;
+    	margin-bottom: 10em;	
+}
+
+div.logo img
+{
+	position: inherit;
+}
+
+div.logo a
+{
+	color: white;
+    	text-decoration: none;
+    	position: inherit;	
+}
+
+div.logo a:hover
+{
+	text-decoration: underline;
+}
+
+div.logo a p
+{
+	font-size: 1.1em;
+}
+
+header
+{
+	margin-bottom: 5em;
+    	margin-top: 4em;
+}
+
+footer
+{
+	opacity: 1; z-index: 3; position: inherit;	
+}
+
+footer p
+{
+	font-size: 1.2em;
+    	line-height: .7;	
+}
+
+
+div.border
+{
+	text-align: center; 
+    	border-bottom: solid 4px white; 
+    	width: 22.5%; 
+    	margin: 0 39.5%;
+    	padding-bottom: .5em;	
+}
+
+@media only screen and (max-width: 1130px){
+	body {
+	margin-bottom: 0rem;
+	min-height: 240px;
+	}
+
+	div.border {
+	width: 35%;
+	margin: 0 32.5%;
+	}
+}
 
 
 @media only screen and (max-width: 900px){
@@ -58,11 +134,12 @@ p
 	height: 100%;
 	background-size: auto;
 	}
-}
 
-@media only screen and (max-width: 1130px){
-	body {
-	margin-bottom: 0rem;
-	min-height: 240px;
+	div.border {
+	text-align: center;
+	border-bottom: solid 4px white;
+	padding-bottom: .5em;
+	margin: 0 14%;
+	width: inherit;
 	}
 }
